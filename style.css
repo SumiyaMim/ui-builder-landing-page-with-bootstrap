@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+/* color setup */
+:root {
+    --primary: #3155e7;
+    --primary-dark: #2045d6;
+    --black: #010101;
+    --gray-1: #788190;
+    --gray-2: #d3d4db;
+    --white: #FFFFFF;
+    --body: #fefefe;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: var(--body);
+}
+
+/* button style */
+.btn {
+    border-radius: 8px;
+}
+.btn-primary, 
+.btn-outline-secondary {
+    padding: 12px 20px;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+.btn-outline-secondary:focus {
+    background-color: var(--gray-2);
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+}
+
+/* navbar section */
+.navbar {
+    padding: 24px 0;
+}
+
+.navbar .btn-outline-secondary {
+    border: 1px solid var(--gray-2);
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 10px 16px;
+}
+
+.nav-link {
+    margin-left: 24px;
+    font-size: 15px;
+    color: var(--gray-1);
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--black);
+    font-weight: bold;
+}
+
+/* hero section */
+section.hero {
+    padding: 80px 0;
+}
+
+section.hero .text {
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 73px;
+    color: var(--black);
+}
+
+.buttons {
+    padding-top: 69px;
+}
+
+.buttons .btn {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+}
+
+/* setup section */
+section.setup {
+    padding: 150px 0;
+}
+
+section.setup .text-header h3 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+}
+
+section.setup .text-header p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding: 8px 0 24px 0;
+}
+
+section.setup .icons {
+    padding: 20px 0;
+}
+
+section.setup h5 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--black);
+}
+
+section.setup .desc p {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--gray-1);
+    max-width: 284px;
+    margin: 0 auto;
+}
+
+/* information section */
+section.information .text-information {
+    padding: 140px 0;
+}
+
+section.information h5 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--black);
+}
+
+section.information p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--gray-1);
+    padding-top: 20px;
+}
+
+section.information .info-1 {
+    padding: 80px 0;
+}
+
+section.information .info-2 {
+    padding: 80px 0;
+}
+
+/* footer section */
+footer {
+    padding-top: 50px;
+    margin-bottom: 44px;
+}
+
+footer a {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 18px;
+    color: var(--black);
+}
+
+footer .copy {
+    margin-top: 32px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--gray-1);
+}
+
+/* responsive section */
+
+/* small device */
+@media (min-width: 425px) { 
+    .navbar {
+        padding: 20px 0;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+    section.hero img {
+        padding-top: 80px;
+    }
+
+    section.hero .text {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 53px;
+    }
+
+    section.hero,
+    section.setup,
+    section.information {
+        text-align: center;
+    }
+
+    .buttons .btn {
+        display: inline;
+        margin: 20px;
+    }
+
+    .buttons .ms-3 {
+        margin-left: 0 !important;
+    }
+
+    section.setup {
+        padding: 50px 0;
+    }
+
+    section.setup .text-header h3 {
+        font-size: 32px;
+    }
+
+    section.setup .desc p {
+        font-size: 10px;
+    }
+
+    section.information .text-information {
+        padding: 15px 0 50px 0;
+    }
+
+    section.information h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    section.information p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    footer {
+        padding-top: 0px;
+        margin-bottom: 44px;
+    }
+}
+
+/* medium device */
+@media (min-width: 768px) { 
+    section.hero .text {
+        font-weight: 800;
+        font-size: 30px;
+        line-height: 53px;
+    }
+
+    section.hero img {
+        padding-top: 0px;
+    }
+
+    section.hero,
+    section.setup,
+    section.information {
+        text-align: left;
+    }
+
+    section.information .text-information {
+        padding: 20px 0;
+    }
+
+    section.information h5 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    section.information p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
+
+/* large device */
+@media (min-width: 1064px) { 
+    .navbar {
+        padding: 24px 0;
+    }
+    
+    .nav-link {
+        margin-left: 24px;
+    }
+
+    section.hero .text {
+        font-size: 48px;
+        line-height: 73px;
+    }
+
+    section.setup .text-header h3 {
+        font-size: 42px;
+    }
+    
+    section.setup .text-header p {
+        font-size: 18px;
+    }
+
+    section.setup .desc p {
+        font-size: 13px;
+    }
+
+    section.information h5 {
+        font-size: 42px;
+        line-height: 48px;
+    }
+    
+    section.information p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
